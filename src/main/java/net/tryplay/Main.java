@@ -30,7 +30,7 @@ public final class Main extends JavaPlugin implements Listener {
 
     @Override
     public void onDisable() {
-        saver.save();
+        this.saver.save();
         getServer().getConsoleSender().sendMessage(ChatColor.GREEN + "Plugin Desactivado");
     }
 
