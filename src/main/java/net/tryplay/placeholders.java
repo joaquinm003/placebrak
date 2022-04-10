@@ -1,12 +1,8 @@
-package com.tryplay.net.com.tryplay.net.Com.tryplay;
+package net.tryplay;
 
 import me.clip.placeholderapi.expansion.PlaceholderExpansion;
-import org.bukkit.Bukkit;
 import org.bukkit.OfflinePlayer;
-import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
-
-import java.util.concurrent.TimeUnit;
 
 public class placeholders extends PlaceholderExpansion {
 
