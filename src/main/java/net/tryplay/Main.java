@@ -5,12 +5,8 @@ import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
-import org.bukkit.event.block.BlockBreakEvent;
-import org.bukkit.event.block.BlockPlaceEvent;
 import org.bukkit.plugin.java.JavaPlugin;
-import org.jetbrains.annotations.NotNull;
 
 import java.util.concurrent.TimeUnit;
 
@@ -26,7 +22,7 @@ public final class Main extends JavaPlugin implements Listener {
             getDataFolder().mkdir();
         }
         if(Bukkit.getPluginManager().isPluginEnabled("PlaceholderAPI")) {
-            new placeholders(this).register();
+            new Placeholder(this).register();
         }
         send(Bukkit.getConsoleSender(), "&aPlugin activado");
 

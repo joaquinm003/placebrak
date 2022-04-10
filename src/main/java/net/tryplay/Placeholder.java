@@ -4,13 +4,12 @@ import me.clip.placeholderapi.expansion.PlaceholderExpansion;
 import org.bukkit.OfflinePlayer;
 import org.jetbrains.annotations.NotNull;
 
-public class placeholders extends PlaceholderExpansion {
+public class Placeholder extends PlaceholderExpansion {
 
     private final Main plugin;
-    private Saver saver;
-    public placeholders(Main main) {
-        this.plugin = main;
-        this.saver = new Saver(main);
+
+    public Placeholder(Main plugin) {
+        this.plugin = plugin;
     }
 
     @Override
@@ -43,13 +42,13 @@ public class placeholders extends PlaceholderExpansion {
     @Override
     public String onRequest(OfflinePlayer player, String params) {
         if(params.equalsIgnoreCase("break")){
-            return plugin.getBreak(player.getPlayer());
+            return this.plugin.getBreak(player.getPlayer());
         }
 
         if(params.equalsIgnoreCase("place")){
-            return plugin.getPlace(player.getPlayer());
+            return this.plugin.getPlace(player.getPlayer());
         }
 
         return null; // Placeholder is unknown by the expansion
-}
+    }
 }
