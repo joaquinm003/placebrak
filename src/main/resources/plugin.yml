@@ -1,4 +1,4 @@
-name: Com.tryplay.net
+name: ${project.name}
 version: ${project.version}
-main: com.tryplay.net.com.tryplay.net.Com.tryplay.Main
+main: net.tryplay.Main
 api-version: 1.18

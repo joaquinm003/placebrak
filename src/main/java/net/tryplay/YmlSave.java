@@ -1,4 +1,4 @@
-package com.tryplay.net.com.tryplay.net.Com.tryplay;
+package net.tryplay;
 
 
 import org.bukkit.configuration.file.FileConfiguration;
